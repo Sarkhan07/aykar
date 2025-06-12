@@ -7,7 +7,7 @@ export default function Footer() {
           <h3 className="font-bold mb-4">İletişim</h3>
           <p>Email: info@aykar.com</p>
           <p>Telefon: +90 555 123 45 67</p>
-          <p>Adres: İstanbul, Türkiye</p>
+          <p>Adres: İzmir, Türkiye</p>
         </div>
         <div>
           <h3 className="font-bold mb-4">Linkler</h3>

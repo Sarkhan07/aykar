@@ -14,7 +14,9 @@ export default function Gallery() {
         ))}
       </div>
       <div className="flex justify-center mt-8">
-        <button className="bg-blue-500 text-white px-8 py-3 rounded">Galeriyi Gör</button>
+        <a href="/galery">
+          <button className="bg-blue-500 text-white px-8 py-3 rounded">Galeriyi Gör</button>
+        </a>
       </div>
     </section>
   )

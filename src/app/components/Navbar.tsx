@@ -12,11 +12,10 @@ export default function Navbar() {
         <span className="font-bold text-xl">Aykar</span>
       </div>
       <ul className="flex space-x-6 font-medium text-black">
-        <li><a href="#">Anasayfa</a></li>
-        <li><a href="#">Galeri</a></li>
-        <li><a href="#">Otomatlar</a></li>
-        <li><a href="#">Hakkımızda</a></li>
-        <li><a href="#">İletişim</a></li>
+        <li><a href="/">Anasayfa</a></li>
+        <li><a href="/galery">Galeri</a></li>
+        <li><a href="/about">Hakkımızda</a></li>
+        <li><a href="/contact">İletişim</a></li>
 
         <button className="flex items-center space-x-2 text-amber-950 text-shadow-amber-950">
           <GlobeAltIcon className="h-6 w-6" />
