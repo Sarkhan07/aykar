@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export default function GaleriPage() {
-  const images = ['4.jpg', 'foto3.jpg', 'OTOMAT1.jpg', 'OTOMAT2.jpg'];
+  const images = ['otomat1.jpg', 'otomat2.jpg', 'otomat3.jpg', 'otomat4.jpg', 'otomat5.jpg', 'otomat6.jpg', 'otomat7.jpg'];
 
   const [current, setCurrent] = useState(0);
 
@@ -43,7 +43,7 @@ export default function GaleriPage() {
         <div className="flex justify-center mt-8 gap-4">
           {images.map((img, idx) => (
             <div key={idx} onClick={() => setCurrent(idx)} className={`cursor-pointer ${current === idx ? 'ring-4 ring-blue-500' : ''}`}>
-              <Image src={`/${img}`} alt={`Thumbnail ${idx + 1}`} width={100} height={80} className="rounded object-cover" />
+              <Image src={`/${img}`} alt={`Thumbnail ${idx + 1}`} width={100} height={80} className="rounded object-cover aspect-[4/3] " />
             </div>
           ))}
         </div>

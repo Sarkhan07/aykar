@@ -8,8 +8,8 @@ export default function Navbar() {
   return (
     <nav className="flex items-center justify-between p-4 bg-white shadow-md">
       <div className="flex items-center space-x-2">
-        <Image src="/logo.png" alt="Aykar Logo" width={50} height={50} />
-        <span className="font-bold text-xl">Aykar</span>
+        <a href="/"><Image src="/logo.png" alt="Aykar Logo" width={50} height={50} /></a>
+        <span className="font-bold text-xl text-black">MARMARAY OTOMAT</span>
       </div>
       <ul className="flex space-x-6 font-medium text-black">
         <li><a href="/">Anasayfa</a></li>
