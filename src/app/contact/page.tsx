@@ -10,7 +10,7 @@ export default function IletisimPage() {
   const [message, setMessage] = useState('');
   const [isSended, setIsSended] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!email || !name || !message) {
