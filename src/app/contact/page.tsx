@@ -3,18 +3,22 @@ import { useState } from 'react';
 import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/outline';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import { useLanguage } from '@/context/LanguageContext';
+import { translations } from '@/locales/translations';
 
 export default function IletisimPage() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [isSended, setIsSended] = useState(false);
+  const { language } = useLanguage();
+  const t = translations[language];
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!email || !name || !message) {
-      alert('Lütfen tüm alanları doldurun');
+      alert(t.fillAllFields);
       return;
     }
 
@@ -34,11 +38,11 @@ export default function IletisimPage() {
         setEmail('');
         setMessage('');
       } else {
-        alert('Mesaj gönderilemedi');
+        alert(t.messageFailed);
       }
     } catch (err) {
       console.error(err);
-      alert('Bir hata oluştu');
+      alert(t.errorOccurred);
     }
   };
 
@@ -46,7 +50,7 @@ export default function IletisimPage() {
     <>
       <Navbar />
       <section className="px-8 py-16 bg-white min-h-screen">
-        <h2 className="text-3xl font-bold mb-8 text-center text-black">Öneri / Şikayet</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center text-black">{t.contactTitle}</h2>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="space-y-6">
@@ -66,25 +70,25 @@ export default function IletisimPage() {
 
           <div>
             {isSended ? (
-              <div className="text-green-500 text-center text-lg">Mesaj gönderildi!</div>
+              <div className="text-green-500 text-center text-lg">{t.formSent}</div>
             ) : (
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <input
                   type="text"
-                  placeholder="Adınız"
+                  placeholder={t.formName}
                   className="w-full p-3 border border-gray-300 rounded text-black"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
                 <input
                   type="email"
-                  placeholder="E-posta"
+                  placeholder={t.formEmail}
                   className="w-full p-3 border border-gray-300 rounded text-black"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 <textarea
-                  placeholder="Mesajınız"
+                  placeholder={t.formMessage}
                   rows={5}
                   className="w-full p-3 border border-gray-300 rounded text-black"
                   value={message}
@@ -93,7 +97,7 @@ export default function IletisimPage() {
                 <button
                   type="submit"
                   className="bg-blue-500 text-white px-6 py-3 rounded w-full text-black cursor-pointer">
-                  Gönder
+                  {t.formSend}
                 </button>
               </form>
             )}

@@ -3,8 +3,12 @@ import Image from 'next/image';
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { useLanguage } from '@/context/LanguageContext';
+import { translations } from '@/locales/translations';
 
 export default function GaleriPage() {
+  const { language } = useLanguage();
+  const t = translations[language];
   const images = ['otomat1.jpg', 'otomat2.jpg', 'otomat3.jpg', 'otomat4.jpg', 'otomat5.jpg', 'otomat6.jpg', 'otomat7.jpg'];
 
   const [current, setCurrent] = useState(0);
@@ -21,7 +25,7 @@ export default function GaleriPage() {
     <>
       <Navbar />
       <section className="px-8 py-16 bg-gray-100 min-h-screen">
-        <h2 className="text-3xl font-bold mb-8 text-center text-black">Galeri</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center text-black">{t.galleryTitle}</h2>
 
         <div className="relative w-full max-w-4xl mx-auto h-[600px]">
           <Image
