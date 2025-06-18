@@ -34,7 +34,7 @@ export default function Navbar() {
             <a href="/">{t.home}</a>
             <a href="/galery">{t.gallery}</a>
             <a href="/about">{t.about}</a>
-            <a href="/contact">{t.contact}</a>
+            <a href="/contact">{t.contactTitle}</a>
 
 
             <div className="relative">
@@ -101,7 +101,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
             <button onClick={() => setMenuOpen(!menuOpen)}>
-              {menuOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
+              {menuOpen ? <XMarkIcon className="h-6 w-6 text-black" /> : <Bars3Icon className="h-6 w-6 text-black" />}
             </button>
           </div>
         </div>
@@ -116,7 +116,7 @@ export default function Navbar() {
           <a href="/contact" className="block">{t.contact}</a>
 
           <div className="pt-4 border-t mt-4">
-            <p className="text-sm text-gray-500 mb-1">{t.contactUs}:</p>
+            <p className="text-sm text-gray-500 mb-1">{t.lan}:</p>
             <div className="space-y-1">
               {language !== 'tr' && (
                 <button onClick={() => changeLanguage('tr')} className="block w-full text-left">

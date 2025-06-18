@@ -25,6 +25,7 @@ export const translations = {
     heroTitle: "Marmaray İstasyonlarında Otomatlar",
     heroDescription: "Aykar’ın modern otomat makineleri ile Marmaray istasyonlarında kesintisiz atıştırmalık keyfi.",
     brand: "MARMARAY OTOMAT",
+    lan: "Dili Seç:",
     about1: "Aykar Vending olarak, modern otomat sistemleriyle müşterilerimize hızlı, kaliteli ve güvenilir hizmet sunmayı amaçlıyoruz. Özellikle Marmaray istasyonlarında konumlanan makinelerimizle yolculara taze ve çeşitli ürünler sağlıyoruz.",
     about2: "Gelişmiş teknolojiye sahip otomatlarımız sayesinde içecekler, atıştırmalıklar ve günlük ihtiyaç ürünlerini kesintisiz bir şekilde temin edebilirsiniz. Hijyen ve kalite standartlarımızla her zaman müşterilerimizin memnuniyetini ön planda tutuyoruz.",
     about3: "Müşteri odaklı yaklaşımımız ve sürekli gelişen altyapımızla sektörde öncü olmaya devam ediyoruz."
@@ -55,6 +56,7 @@ export const translations = {
     heroTitle: "Vending Machines at Marmaray Stations",
     heroDescription: "Enjoy uninterrupted snacks at Marmaray stations with Aykar’s modern vending machines.",
     brand: "MARMARAY VENDING",
+    lan: "Select Language:",
     about1: "As Aykar Vending, we aim to provide fast, high-quality and reliable service to our customers with modern vending systems. We provide fresh and diverse products to passengers with our machines located especially in Marmaray stations.",
     about2: "Thanks to our advanced technology vending machines, you can supply beverages, snacks and daily necessities without interruption. We always prioritize the satisfaction of our customers with our hygiene and quality standards.",
     about3: "We continue to be a pioneer in the sector with our customer-focused approach and constantly evolving infrastructure."
@@ -85,6 +87,7 @@ export const translations = {
     heroTitle: "آلات البيع في محطات مرمراي",
     heroDescription: "استمتع بوجبات خفيفة دون انقطاع في محطات مرمراي مع آلات أيكار الحديثة.",
     brand: "مرمراي أوتومات",
+    lan: "اختر اللغة:",
     about1: "نحن نواصل كوننا رائدين في هذا القطاع من خلال نهجنا الذي يركز على العملاء والبنية التحتية المتطورة باستمرار.",
     about2: "بفضل آلات البيع المتطورة لدينا، يمكنكم توفير المشروبات والوجبات الخفيفة والاحتياجات اليومية دون انقطاع. نولي رضا عملائنا دائمًا الأولوية القصوى من خلال معايير النظافة والجودة العالية.",
     about3: "نحن نواصل كوننا رائدين في هذا القطاع من خلال نهجنا الذي يركز على العملاء والبنية التحتية المتطورة باستمرار."
