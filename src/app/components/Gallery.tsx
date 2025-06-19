@@ -4,7 +4,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { translations } from '@/locales/translations';
 
 export default function Gallery() {
-  const images = ['otomat1.jpg', 'otomat2.jpg', 'otomat3.jpg', 'otomat4.jpg', 'otomat5.jpg', 'otomat6.jpg'];
+  const images = ['yeni1.jpg', 'yeni2.jpg', 'otomat3.jpg', 'otomat4.jpg', 'otomat5.jpg', 'otomat6.jpg'];
   const { language } = useLanguage();
   const t = translations[language];
 

@@ -113,7 +113,7 @@ export default function Navbar() {
           <a href="/" className="block">{t.home}</a>
           <a href="/galery" className="block">{t.gallery}</a>
           <a href="/about" className="block">{t.about}</a>
-          <a href="/contact" className="block">{t.contact}</a>
+          <a href="/contact" className="block">{t.contactTitle}</a>
 
           <div className="pt-4 border-t mt-4">
             <p className="text-sm text-gray-500 mb-1">{t.lan}:</p>

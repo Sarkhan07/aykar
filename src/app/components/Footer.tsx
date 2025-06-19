@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="grid md:grid-cols-3 gap-8">
         <div>
           <h3 className="font-bold mb-4">{t.contactUs}</h3>
-          <p>{t.email}: otomataykar@hotmail.com</p>
+          <p>{t.email}: info@marmarayotomat.com.tr</p>
           <p>{t.phone}: +90 532 478 98 13</p>
           <p>{t.address}</p>
         </div>

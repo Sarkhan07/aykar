@@ -9,7 +9,7 @@ import { translations } from '@/locales/translations';
 export default function GaleriPage() {
   const { language } = useLanguage();
   const t = translations[language];
-  const images = ['otomat1.jpg', 'otomat2.jpg', 'otomat3.jpg', 'otomat4.jpg', 'otomat5.jpg', 'otomat6.jpg', 'otomat7.jpg'];
+  const images = ['yeni1.jpg', 'yeni2.jpg', 'otomat3.jpg', 'otomat4.jpg', 'otomat5.jpg', 'otomat6.jpg', 'otomat7.jpg'];
 
   const [current, setCurrent] = useState(0);
 
