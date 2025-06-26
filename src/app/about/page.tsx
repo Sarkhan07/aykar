@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import { useLanguage } from '@/context/LanguageContext';
@@ -30,7 +29,7 @@ export default function HakkimizdaPage() {
           </div>
 
           <div>
-            <Image src="/foto3.jpg" alt="Hakkımızda" width={600} height={400} className="rounded-lg shadow-lg object-cover" />
+            <img src="/foto3.jpg" alt="Hakkımızda" width="600" height="400" className="rounded-lg shadow-lg object-cover" />
           </div>
         </div>
       </section>

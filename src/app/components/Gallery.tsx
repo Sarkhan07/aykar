@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import { useLanguage } from '@/context/LanguageContext';
 import { translations } from '@/locales/translations';
 
@@ -15,11 +14,10 @@ export default function Gallery() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
         {images.map((img, idx) => (
           <div key={idx} className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-md bg-white">
-            <Image
+            <img
               src={`/${img}`}
               alt={`Galeri ${idx + 1}`}
-              fill
-              className="object-cover"
+              className="absolute inset-0 w-full h-full object-cover"
             />
           </div>
         ))}

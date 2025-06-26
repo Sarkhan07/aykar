@@ -1,6 +1,5 @@
 'use client';
 import { translations } from '@/locales/translations';
-import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 
@@ -24,12 +23,11 @@ export default function Hero() {
 
 
       <div className="absolute inset-0 z-0 transition-opacity duration-1000">
-        <Image
+        <img
           src={slides[current]}
           alt="Background Slide"
-          fill
+
           style={{ objectFit: 'cover' }}
-          priority
         />
 
         <div className="absolute inset-0 bg-black opacity-70"></div>

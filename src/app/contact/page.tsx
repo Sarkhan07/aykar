@@ -23,13 +23,14 @@ export default function IletisimPage() {
     }
 
     try {
-      const res = await fetch('/api/send-email', {
+      const res = await fetch('/contact.php', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: JSON.stringify({ email, name, message })
+        body: new URLSearchParams({ name, email, message }).toString()
       });
+
 
       const data = await res.json();
       if (data.ok) {

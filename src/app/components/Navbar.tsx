@@ -1,6 +1,5 @@
 'use client';
-import Image from 'next/image';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { GlobeAltIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { translations } from '@/locales/translations';
 import { useLanguage } from '@/context/LanguageContext';
@@ -24,7 +23,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16 items-center">
           <div className="flex items-center">
             <a href="/" className="flex items-center space-x-2">
-              <Image src="/logo.png" alt="Aykar Logo" width={40} height={40} />
+              <img src="/logo.png" alt="Aykar Logo" width="40" height="40" />
               <span className="font-bold text-lg sm:text-xl text-black">{t.brand}</span>
             </a>
           </div>
