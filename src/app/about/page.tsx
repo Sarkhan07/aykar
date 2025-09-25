@@ -29,7 +29,7 @@ export default function HakkimizdaPage() {
           </div>
 
           <div>
-            <img src="/foto3.jpg" alt="Hakkımızda" width="600" height="400" className="rounded-lg shadow-lg object-cover" />
+            <img src="/yeni2.jpg." alt="Hakkımızda" width="600" height="400" className="rounded-lg shadow-lg object-cover" />
           </div>
         </div>
       </section>
